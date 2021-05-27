@@ -1,0 +1,16 @@
+body{
+    background: rgb(10,10,10);
+}
+.container{
+  
+        display: flex;
+        justify-content: center;
+
+}
+img{
+    padding:15px;
+    border:2px solid blanchedalmond ;
+}
+h1{
+    color:blanchedalmond;
+}

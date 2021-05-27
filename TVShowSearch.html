@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="TVShowSearch.css">
 </head>
 <body>
-    <h1>TV Show Search</h1>
-<form id="searchForm">
-    <input type="text" placeholder="TV Show Title" name="query">
-    <button>Search</button>
+    <h1 style="text-align: center;">TV Show Search</h1>
+<form id="searchForm" class="row g-3">
+    <div class="col-auto">
+        <label for="query" class="visually-hidden">Show Name</label>
+        <input class="form-control form-control-lg" type="text" placeholder="TV Show Title" name="query" id="query" > 
+      </div>
+    <div class="col-auto">
+        <button class="btn btn-primary mb-3" ">Search</button>
+      </div>
+    </form>
     <div id="container">
             
     </div>
-</form>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="TVShowSearch.js"></script>
